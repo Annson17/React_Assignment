@@ -1,0 +1,141 @@
+/* App.css */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  color: #4a4a4a;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 14px;
+  width: 320px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.2);
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #388E3C;
+  transform: translateY(-3px);
+}
+
+.result-box {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  padding: 25px;
+  border-radius: 10px;
+  width: 380px;
+  margin: 30px auto 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.result-box:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 12px;
+  font-size: 22px;
+  color: #333;
+}
+
+p {
+  line-height: 1.8;
+  color: #555;
+}
+
+.definition {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 12px;
+}
+
+.single-definition {
+  background-color: #f1f8f5;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #4CAF50;
+  transition: background-color 0.3s ease;
+}
+
+.single-definition:hover {
+  background-color: #eaf7e7;
+}
+
+.no-result {
+  color: #ff3b30;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  input {
+    width: 100%;
+  }
+  
+  button {
+    width: 100%;
+  }
+
+  .result-box {
+    width: 100%;
+    padding: 15px;
+  }
+}
